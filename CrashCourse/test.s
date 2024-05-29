@@ -1,5 +1,6 @@
-.intel_sintax noprefix
-.globl start
+.intel_syntax noprefix
+.globl _start
 
 _start:
     nop
+  
