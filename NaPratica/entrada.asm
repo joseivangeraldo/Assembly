@@ -14,3 +14,29 @@ segment .data
     STD_OUT equ 0x1 ; valor de saida padrao
 
 section .data
+    msg db 'Entre com seu nome: ', LF, NULL
+    tam equ $- msg
+
+section .bss
+    nome resb 1 ; vai ler valor de byte em byte
+
+section .text
+
+global _start
+
+_start:
+    mov EAX, SYS_WRITE
+    mov EBX, STD_OUT
+    mov ECX, msg
+    mov EDX, tam
+    int SYS_CALL
+
+    mov EAX, SYS_READ
+    mov EBX, STD_IN
+    mov ECX, nome
+    mov EDX, 0xA
+    int SYS_CALL
+
+    mov EAX, SYS_EXIT
+    mov EBX, RET_EXIT
+    int SYS_CALL
