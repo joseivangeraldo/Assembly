@@ -8,3 +8,9 @@ _start: ;;PROGRAMA BASICO
     mov EAX, 0x1    ;SO estou terminando o programa
     mov EBX, 0x0    ;SO ovalor de retorno é 0
     int 0x80        ; O sistema pega todas as movimentações e executa
+
+CRIAR ARQUIVO MKEFILE. é so digitar make
+
+    ; salto condicional
+    ;je= jg> jge>= jle<= jne!=
+    ;jmp salto incondicional
