@@ -1,6 +1,8 @@
 .intel_syntax noprefix
-.global _start
+.globl _start
 
-_start:
+_start:	
+	nop
     nop
-        
+    nop
+    
