@@ -21,10 +21,11 @@ int main(void){
         for(int j = 0; s[i] != 32; j++)
         {
             busca = true;
+            break;
         }
     }
     
-    if(busca = true)
+    if(busca == true)
     {
         printf("Encontrou\n");
     }
