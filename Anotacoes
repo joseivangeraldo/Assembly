@@ -1,0 +1,22 @@
+@joseivangeraldo ➜ /workspaces/Assembly/NaPratica (main) $ sudo apt-get update
+@joseivangeraldo ➜ /workspaces/Assembly/NaPratica (main) $ nasm -f elf64 hello.asm
+@joseivangeraldo ➜ /workspaces/Assembly/NaPratica (main) $ ls
+hello.asm  hello.o
+
+@joseivangeraldo ➜ /workspaces/Assembly/NaPratica (main) $ ld -s -o hello hello.o
+@joseivangeraldo ➜ /workspaces/Assembly/NaPratica (main) $ ls
+hello  hello.asm  hello.o
+
+;;;um programa em assembler pode ter 3seções
+
+section .data   ;;colocamos as constantes
+
+section .text   ;;ficam as variaveis
+
+global _start       ;;tem de ter obrigatorio
+
+_start:     ;;ponto de entrada
+
+    mov EAX, 0x1      ;;destino, origem ESTOU TERMINANDO O PROGRAMA
+    mov EBX, 0x0      ;; O VALOR DE RETORNO É ZERO,
+    int 0x80        ;; O SO Pega todas as movimentações e executa
