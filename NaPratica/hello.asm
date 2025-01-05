@@ -1,7 +1,7 @@
 ;;;um programa em assembler pode ter 3seções
 
 section .data   ;;colocamos as constantes
-    msg db "Alo mundo estou programando em Assembly!!", 0xA
+    msg db "Alo mundo estou programando em Assembly!!", 0xA, 0xD
     tam equ $ - msg
 
 section .text   ;;ficam as variaveis
