@@ -1,4 +1,4 @@
-NOME = entrada
+NOME = maiornum
 
 all: $(NOME).o
 	ld -s -o $(NOME) $(NOME).o

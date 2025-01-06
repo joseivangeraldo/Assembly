@@ -22,3 +22,10 @@ _start:     ;;ponto de entrada
     int 0x80        ;; O SO Pega todas as movimentações e executa
 
 SEMPRE TEM DE USAR USAR OS REGISTRADORES.
+
+TABELA DA VERDADE:
+    AND     OR      XOR
+7 - 0111    0111    0111
+5 - 0101    0101    0101
+    0101    0111    0010
+     5       7        2  >> É  A DIFERENÇA
