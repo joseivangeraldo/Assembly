@@ -1,13 +1,13 @@
-@joseivangeraldo ➜ /workspaces/Assembly/NaPratica (main) $ sudo apt-get update
-@joseivangeraldo ➜ /workspaces/Assembly/NaPratica (main) $ nasm -f elf64 hello.asm
-@joseivangeraldo ➜ /workspaces/Assembly/NaPratica (main) $ ls
+$ sudo apt-get update
+$ nasm -f elf64 hello.asm
+$ ls
 hello.asm  hello.o
 
-@joseivangeraldo ➜ /workspaces/Assembly/NaPratica (main) $ ld -s -o hello hello.o
-@joseivangeraldo ➜ /workspaces/Assembly/NaPratica (main) $ ls
+$ ld -s -o hello hello.o
+$ ls
 hello  hello.asm  hello.o
 
-;;;um programa em assembler pode ter 3seções
+;;;SECOES DE UM PROGRAMA EM ASSEMBLY
 
 section .data   ;;colocamos as constantes
 
@@ -29,5 +29,3 @@ TABELA DA VERDADE:
 5 - 0101    0101    0101
     0101    0111    0010
      5       7        2  >> É  A DIFERENÇA
-
-     hjhd
