@@ -29,3 +29,13 @@ TABELA DA VERDADE:
 5 - 0101    0101    0101
     0101    0111    0010
      5       7        2  >> É  A DIFERENÇA
+
+MAKEFILE:
+NOME = entrada
+
+all: $(NOME).o
+	ld -s -o $(NOME) $(NOME).o
+	rm -rf *.o;
+
+%.o: %.asm
+	nasm -f elf64 $<
