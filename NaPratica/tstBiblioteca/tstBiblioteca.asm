@@ -11,3 +11,5 @@ _start:
 
     dec esi
     mov dl, 0x11 ;;'A' OX11   --> 0X31 'a'
+    add dl, '0' ;;CONVERTE O CARACTER EM UM NUMERO
+    mov [esi],  dl
