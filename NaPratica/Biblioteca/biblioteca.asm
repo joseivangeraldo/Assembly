@@ -9,7 +9,9 @@ _start:
     address esi,    0x9
     mov byte[esi],  0xA
 
-    dec esi
-    mov dl, 0x11 ;;'A' OX11   --> 0X31 'a'
+    ;;'DCBA/n'
+
+    dec esi ;;MOVE ESI para ficar na ordem
+    mov dl, 0x11 ;; 11 é um numero 'A' OX11   --> 0X31 'a'
     add dl, '0' ;;CONVERTE O CARACTER EM UM NUMERO
     mov [esi],  dl
