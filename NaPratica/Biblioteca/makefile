@@ -1,4 +1,4 @@
-NOME = tstBiblioteca
+NOME = biblioteca
 
 all: $(NOME).o
 	ld -s -o $(NOME) $(NOME).o

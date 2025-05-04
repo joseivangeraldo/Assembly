@@ -1,7 +1,12 @@
+;EM UMA BIBLIOTECATEMOS:
+;SEGMENT .DATA
+;SEGMENT .BSS
+;SEGMENT .TEXT
+
 segment .data
     LF          equ 0xA ;;Line feed
     NULL        equ 0xD  ;;Final da String NULO
-    SYS_CALL    equ 0x80    ;;
+    SYS_CALL    equ 0x80 ;;Envia informação ao S.O
     
     ;   EAX
     SYS_EXIT    equ 0x1 ;;Codigo de chamadapara finalizar      
@@ -24,4 +29,5 @@ segment .data
         mov EBX, STD_OUT
         mov ECX, BUFFER
         mov EDX, TAM_BUFFER
+        int SYS_CALL
         ret
