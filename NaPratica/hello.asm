@@ -1,4 +1,6 @@
 ;;;um programa em assembler pode ter 3seções
+;ld ld -s -o $(NOME) $(NOME).o tira a possibilidade de usar o GDB
+
 
 section .data   ;;colocamos as constantes
     msg db "Alo mundo estou programando em Assembly!!", 0xA, 0xD
