@@ -1,7 +1,7 @@
 NOME = biblioteca
 
 all: $(NOME).o
-	ld -s -o $(NOME) $(NOME).o
+	ld -o $(NOME) $(NOME).o
 	rm -rf *.o
 
 %.o: %.asm
