@@ -1,6 +1,3 @@
-To debug an executable (.exe) file in GDB, you first need to tell GDB the name of the executable.
-Then, you can run the program under GDB's control, setting breakpoints and examining the program's state. 
-
 1. Start GDB with the executable:
 Open a terminal and type gdb [executable_name] where [executable_name] is the name of your .exe file (e.g., gdb my_program.exe). 
 
@@ -112,12 +109,6 @@ All defined variables:
 ENDIANES:
 $ nasm -felf64 Endian.nasm -o Endian.o
 $ ld -o Endian Endian.o
-
-gitpod /workspace/kernel/pentesteracadem (main) $ ./Endian 
-Hello World to the SLAE-64 Course
-gitpod /workspace/kernel/pentesteracadem (main) $ gdb -q ./Endian
-Reading symbols from ./Endian...
-(No debugging symbols found in ./Endian)
 (gdb) set disassembly-flavor intel
 (gdb) break _start
 Breakpoint 1 at 0x401000
@@ -774,3 +765,5 @@ gdb -q ./Logical-64 -tui
 (gdb)x/xg &var2
 (gdb)stepi
 (gdb)
+
+(gdb) ptype 0x300000 --> VER O TIPO DA VARIAVEL
