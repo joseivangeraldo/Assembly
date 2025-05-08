@@ -26,4 +26,4 @@ _start:
 
     mov eax, SYS_EXIT
     mov ebx, RET_EXIT
-    int SYS_EXIT
+    int SYS_CALL
