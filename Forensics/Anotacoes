@@ -1,0 +1,7 @@
+ivan@ivan-Inspiron-3437:~$ sudo apt-get install libimage-exiftool-perl
+
+~/Desktop/Exif\ tool\ Analysis
+
+ivan@ivan-Inspiron-3437:~/Downloads$ exiftool foto_Ivan.jpg 
+
+www.gps-coordinates.net
