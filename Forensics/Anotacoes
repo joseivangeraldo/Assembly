@@ -5,3 +5,8 @@ exiftool foto_Ivan.jpg --system:all -e
 ivan@ivan-Inspiron-3437:~/Downloads$ exiftool foto_Ivan.jpg 
 
 www.gps-coordinates.net
+
+https://www.cve.org/ --> common vunebalities
+https://www.cisa.gov/
+
+exiftool -p '$directory/$filename' -if 'not $gpslatitude' -r DIR  --> lista se as fotos tem GPS location
