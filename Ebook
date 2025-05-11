@@ -29,3 +29,6 @@ _start:
 mov eax, 0x1 
 mov ebx, 0x0 
 int 0x80
+
+
+64 bits 32 bits Utilização rax eax Valoresquesãoretornados dos comandos em um registrador rbx ebx Registradorpreservado. Cuidado ao utilizá-lo rcx ecx Usolivrecomoporexemplocontador rdx edx Usolivreemalgunscomandos rsp esp Ponteirodeumapilha rbp ebp Registradorpreservado. Algumas vezes armazena ponteiros de pilhas rdi edi Napassagemdeargumentos,contém a quantidade desses rsi esi Napassagemdeargumentos,contém os argumentos em si
