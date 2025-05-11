@@ -95,3 +95,12 @@ In this case, the output of the ls -l /home/michal command on the instance will 
 ...
 
 See also ID mapping for more information on how the mount command maps user and group IDs between the host and the instance.
+
+
+Linux : rw      init=/bin/bash
+Após ctr + x para salvar e sair
+
+cat /etc/passwd
+cat /etc/passwd | wc -l
+less /etc/passwd
+passwd --> new password
