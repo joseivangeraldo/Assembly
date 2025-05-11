@@ -32,3 +32,5 @@ int 0x80
 
 
 64 bits 32 bits Utilização rax eax Valoresquesãoretornados dos comandos em um registrador rbx ebx Registradorpreservado. Cuidado ao utilizá-lo rcx ecx Usolivrecomoporexemplocontador rdx edx Usolivreemalgunscomandos rsp esp Ponteirodeumapilha rbp ebp Registradorpreservado. Algumas vezes armazena ponteiros de pilhas rdi edi Napassagemdeargumentos,contém a quantidade desses rsi esi Napassagemdeargumentos,contém os argumentos em si
+
+section .data msg db ’Hello World!’, 0xA ; Mensagem a mostrar tam equ $- msg ; Quantidade de caracteres da mensagem ; Secao do Programa section .text global _start ; Marcador inicial _start: mov eax, 4 ; Informa que se trata de uma saida mov ebx, 1 ; Indica que deve ser realizada no terminal mov ecx, msg ; Conteudo da saida mov edx, tam ; Quantidade de caracteres int 0x80 ; Envia a informacao ao Sistema Operacional saida: mov eax, 1 ; Informa que terminamos as acoes mov ebx, 0 ; Informa o estado final do programa- 0 sem erro int 0x80 ; Envia a informacao ao Sistema Operacional
