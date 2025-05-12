@@ -1,0 +1,24 @@
+64 bits     32 bits     Utilização
+rax         eax         Valores que são retornados dos comandos em um registrador
+rbx         ebx         Registrador preservado. Cuidado ao utilizá-lo
+rcx         ecx         Uso livre como por exemplo contador
+rdx         edx         Uso livre em alguns comandos
+rsp         esp         Ponteiro de uma pilha
+rbp         ebp         Registrador preservado. Algumas vezes armazena ponteiros de pilhas
+rdi         edi         Na passagem de argumentos, contém a quantidade desses
+rsi         esi         Na passagem de argumentos, contém os argumentos em si
+
+Além desses, existem os registradores de r8 a r15 (de 64 bits) e r8d a r15d (de 32 bits) que são utilizados
+nas movimentações correntes durante a nossa programação.
+
+Para o registrador EAX:
+Decimal     Hexadecimal     Utilização 
+1              0x1          Indica o final de operação, corresponde a System.exit
+
+Sigla       Tipo                Significado                 Bytes
+db          Define Bytea        8 bits                      1 byte
+dw          Define Word         16 bits                     2 bytes
+dd          Define Doubleword   32 bits                     4 byte
+dq          Define Quadword     64 bits                     8 byte
+ddq         Define Double Quad  128 bits para inteiros      10 bytes
+dt          Define Ten Bytes    128 bits - para decimais    10 bytes
