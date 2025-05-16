@@ -18,6 +18,17 @@ _start:
     ;;'DCBA/n' ENTRA NO REGISTRADOR DE TRAS PARA FRENTE
 
     dec esi ;;MOVE ESI para TRAS
+    mov dl, 0x33 ;; 13 é um numero 'C ' OX13   --> 0X33 'c'
+    add dl, '0' ;;CONVERTE O CARACTER EM UM NUMERO
+    mov [esi],  dl
+
+
+    dec esi ;;MOVE ESI para TRAS
+    mov dl, 0x32 ;; 12 é um numero 'A  B' OX12   --> 0X32 'b'
+    add dl, '0' ;;CONVERTE O CARACTER EM UM NUMERO
+    mov [esi],  dl
+
+    dec esi ;;MOVE ESI para TRAS
     mov dl, 0x11 ;; 11 é um numero 'A' OX11   --> 0X31 'a'
     add dl, '0' ;;CONVERTE O CARACTER EM UM NUMERO
     mov [esi],  dl

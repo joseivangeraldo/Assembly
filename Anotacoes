@@ -39,3 +39,5 @@ all: $(NOME).o
 
 %.o: %.asm
 	nasm -f elf64 $<
+
+    ivan@ivan-Inspiron-3437:~$ xev --> ver valores binarioos teclado
