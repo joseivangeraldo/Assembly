@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(int argc, char **argv)
+{
+
+    int a = 5;
+    int b = 10;
+
+    printf("Numero de argumentos: %d\n", argc);
+
+    for (int i = 1; i < argc; i++)
+    {
+        printf("a + b = %d : %s\n", i, argv[i]);
+    }
+
+    printf("a + b = %d\n", a = b);
+    return 0;
+}
