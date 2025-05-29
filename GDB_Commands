@@ -749,3 +749,197 @@ gdb -q ./Logical-64 -tui
 (gdb)
 
 (gdb) ptype 0x300000 --> VER O TIPO DA VARIAVEL
+
+
+GNU DEBUGGER
+
+Conteúdo dos slides da turma de 21/10/2023
+Tópicos
+
+    Inicialização
+    Arquivos de início
+    Arquivos executáveis e argumentos
+    Interfaces REPL e TUI
+    Comandos básicos
+    Comandos de informação
+
+Inicialização
+
+gdb
+
+gdb ARQUIVO
+
+gdb --args ARQUIVO ARG1 ARG2...
+
+Para não exibir mensagens:
+
+gdb -q
+
+Arquivos de início
+
+Definições gerais:
+
+~/.gdbinit
+
+Definições antes da carga do init:
+
+~/.config/gdb/gdbearlyinit
+
+Definições por diretório:
+
+Em ~/.gdbinit...
+
+set auto-load safe-path /
+
+Início silencioso:
+
+Em ~/.config/gdb/gdbearlyinit...
+
+set startup-quietly on
+
+Minhas definições gerais
+
+Em ~/.gdbinit:
+
+# Histórico entre sessões...
+set history save on
+
+# Desliga as confirmações...
+set confirm off
+
+# Arquivos de início por diretório...
+set auto-load safe-path /
+
+Em ~/.config/gdb/gdbearlyinit:
+
+# Início silencioso...
+set startup-quietly on
+
+Executáveis e argumentos
+
+Passando na linha do comando...
+
+:~$ gdb --args exemplo1 banana laranja
+
+Na linha do comando e na execução...
+
+:~$ gdb exemplo1
+(gdb) run banana laranja
+
+No GDB...
+
+:~$ gdb
+(gdb) file exemplo1
+Reading symbols from ./exemplo1...
+(gdb) run banana laranja
+
+Interfaces REPL e TUI
+
+Entrando em modo TUI...
+
+:~$ gdb --tui
+
+    No modo TUI, o histórico é acessado pelas teclas Ctrl+P (anterior) e Ctrl+N (próximo).
+
+Circulando layouts...
+
+(gdb) layout next|prev|nome
+
+Layouts TUI...
+
+    asm: Janela de assembly (AT&T)
+    src: Código-fonte
+    regs: Registradores e código-fonte
+    split: Código-fonte e assembly
+
+Atalhos de teclado...
+
+    Ctrl+X A: Alterna TUI/REPL
+    Ctrl+X O: Circula entre janelas
+
+Comandos básicos
+
+Carga de arquivos:
+
+    file ARQUIVO: carrega o executável
+    dir CAMINHO: define diretório de busca
+
+Paradas:
+
+    break PONTO: define ponto de parada
+    watch EXP: para quando EXP é alterada
+    delete [N]: deleta todas ou a parada N
+    clear: deleta todas as paradas
+
+Execução:
+
+    tty TERMINAL: terminal utilizado para I/O
+    run [args]: executa (com argumentos)
+    step [N]: executa uma ou N linhas
+    stepi [N]: executa uma ou N instruções
+    next [N]: executa uma ou N linhas
+    nexti [N]: executa uma ou N instruções
+    continue: continua a execução
+    kill: mata o programa em execução
+
+    step/stepi entram em sub-rotinas!
+
+Comando list:
+
+# Lista 10 linhas do código-fonte...
+list
+
+# Lista 10 linhas ao redor da linha N...
+list 5
+
+# Lista da linha 5 à linha 15...
+list 5,15
+
+# Lista 10 linhas anteriores à última listagem...
+list -
+
+# Altera a quantidade de linhas listadas...
+set listsize 15
+
+    Uma boa 'cheat-sheet': https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf
+
+Comandos de informação
+
+Comando info:
+
+    info registers [regs]: registradores
+    info variables [regex]: variáveis
+    info frame: pilha do processo
+    info breakpoints: pontos de parada
+    info proc: processo
+
+Subcomandos de info proc:
+
+    info proc all
+    info proc cmdline
+    info proc cwd
+    info proc exe
+    info proc files
+    info proc mappings
+    info proc stat
+    info proc status
+
+Comando x (examine):
+
+Examina dados no endereço de memória.
+
+x <formato> <endereço>
+
+Formatos comuns:
+
+# Imprime 8 bytes em hexa...
+x /8x 0x402008
+
+# Imprime 8 caracteres ASCII...
+x /8c 0x402008
+
+# Imprime 8 strings...
+x /8s 0x402008
+
+# Imprime dados na pilha...
+x /8x $sp
