@@ -1,3 +1,6 @@
+PARA SINCRONIZAR AS ULTIMAS ALTERAÇÕES.
+$ git pull
+
 $ sudo apt-get update
 $ nasm -f elf64 hello.asm
 $ ls
