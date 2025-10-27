@@ -1,0 +1,17 @@
+{
+  "name": "NASM Assembly",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "doinkythederp.nasm-language-support",
+        "ms-vscode.cpptools"
+      ]
+    }
+  },
+  "remoteUser": "vscode",
+  "postCreateCommand": "nasm --version && ld --version"
+}
