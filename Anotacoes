@@ -44,3 +44,16 @@ all: $(NOME).o
 	nasm -f elf64 $<
 
     ivan@ivan-Inspiron-3437:~$ xev --> ver valores binarioos teclado
+
+
+ Update the package lists.
+Code
+
+    sudo apt-get update
+
+install nasm.
+Code
+
+    sudo apt-get install nasm
+
+   
