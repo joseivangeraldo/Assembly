@@ -1,5 +1,0 @@
-{
-  // Enable editor autosave (after a short delay)
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1000
-}
