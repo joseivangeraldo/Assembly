@@ -9,19 +9,19 @@ Files added:
 
 Quick start (run from repository root):
 
-1. Make the daemon executable (one-time):
+1  Make the daemon executable (one-time):
 
 ```bash
 chmod +x ./git_autosave_daemon.sh
 ```
 
-2. Run the daemon in the background (default interval = 60s):
+2  Run the daemon in the background (default interval = 60s):
 
 ```bash
 nohup ./git_autosave_daemon.sh &
 ```
 
-3. To change the check interval (seconds) set `AUTOSAVE_INTERVAL`:
+3 To change the check interval (seconds) set `AUTOSAVE_INTERVAL`:
 
 ```bash
 AUTOSAVE_INTERVAL=30 nohup ./git_autosave_daemon.sh &
