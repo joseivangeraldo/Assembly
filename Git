@@ -1,0 +1,12 @@
+git checkout codespace-animated-space-spoon-49grqpxqv7269w
+
+git branch -m main <BRANCH>
+git fetch origin
+git branch -u origin/<BRANCH> <BRANCH>
+git remote set-head origin -a
+
+$ git config --global user.name "Fulano de Tal"
+$ git config --global user.email fulanodetal@exemplo.br
+
+git checkout 
+git branch -m <new_branch_name>
