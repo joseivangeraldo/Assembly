@@ -1,0 +1,34 @@
+https//vacr.io/weeklyworkshop
+
+ivan_geraldo@cloudshell:~/Assembly/Reverse (myproject74067)$ file chall1
+chall1: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), statically linked, not stripped
+
+$ string [filename]
+Determine type of executable:
+ELF - "Executable file format". linux Program
+PE -   "Portable executable". Windows format
+AIF - "Arm Image Format": Embedded System
+
+ivan_geraldo@cloudshell:~/Assembly/Reverse (myproject74067)$ strings chall1
+Congratz !
+You failed, try again!
+expl.asm
+winMessage
+lenWinMessage
+failMessage
+lenFailMessage
+buffer
+_loop
+_print
+_fail
+_win
+_exit
+__bss_start
+_edata
+_end
+.symtab
+.strtab
+.shstrtab
+.text
+.data
+.bss

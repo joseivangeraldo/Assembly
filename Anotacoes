@@ -121,4 +121,6 @@ whether to create backups (yes/no),
 whether to force-push to the remote (yes/no).
 If you'd like, I can run the non-destructive inspection commands now so you can see the current state before deciding. Which would you like
    
+INSTALAR NASM:
+$ sudo apt install nasm
 
