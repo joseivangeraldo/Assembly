@@ -1,3 +1,24 @@
+ESPECIAIS BASH CODE ANDREGISTERS:
+ivan_geraldo@cloudshell:~/Assembly/Pentester (myproject74067)$ var1=3
+ivan_geraldo@cloudshell:~/Assembly/Pentester (myproject74067)$ var2=4
+
+ivan_geraldo@cloudshell:~/Assembly/Pentester (myproject74067)$ soma=$((var1 + var2))
+
+ivan_geraldo@cloudshell:~/Assembly/Pentester (myproject74067)$ echo $soma
+7
+
+ivan_geraldo@cloudshell:~/Assembly/Pentester (myproject74067)$ read -p "Digite o primeiro número: " n1
+Digite o primeiro número: 20
+ivan_geraldo@cloudshell:~/Assembly/Pentester (myproject74067)$ read -p "Digite o segundo número: " n2
+Digite o segundo número: 34
+ivan_geraldo@cloudshell:~/Assembly/Pentester (myproject74067)$ read -p "Digite o segundo número: " n2
+Digite o segundo número: 23
+ivan_geraldo@cloudshell:~/Assembly/Pentester (myproject74067)$ echo "Resultado: $(($n1 + $n2))"
+Resultado: 43
+ivan_geraldo@cloudshell:~/Assembly/Pentester (myproject74067)$ 
+
+Context: In 16-bit, it was called IP. In 32-bit, it was EIP (Extended Instruction Pointer). In 64-bit, it is RIP
+
 PARA SINCRONIZAR AS ULTIMAS ALTERAÇÕES.
 $ git pull
 
