@@ -1,27 +1,23 @@
-ESPECIAIS BASH CODE ANDREGISTERS:
-ivan_geraldo@cloudshell:~/Assembly/Pentester (myproject74067)$ var1=3
-ivan_geraldo@cloudshell:~/Assembly/Pentester (myproject74067)$ var2=4
+ESPECIAIS BASH CODE AND REGISTERS:
+$ var1=3
+$ var2=4
 
-ivan_geraldo@cloudshell:~/Assembly/Pentester (myproject74067)$ soma=$((var1 + var2))
-
-ivan_geraldo@cloudshell:~/Assembly/Pentester (myproject74067)$ echo $soma
+$ soma=$((var1 + var2))
+$ echo $soma
 7
 
-ivan_geraldo@cloudshell:~/Assembly/Pentester (myproject74067)$ read -p "Digite o primeiro número: " n1
+LER ENTRADA DO TECLADO: 
+$ read -p "Digite o primeiro número: " n1
 Digite o primeiro número: 20
-ivan_geraldo@cloudshell:~/Assembly/Pentester (myproject74067)$ read -p "Digite o segundo número: " n2
+$ read -p "Digite o segundo número: " n2
 Digite o segundo número: 34
-ivan_geraldo@cloudshell:~/Assembly/Pentester (myproject74067)$ read -p "Digite o segundo número: " n2
+$ read -p "Digite o segundo número: " n2
 Digite o segundo número: 23
-ivan_geraldo@cloudshell:~/Assembly/Pentester (myproject74067)$ echo "Resultado: $(($n1 + $n2))"
+$ echo "Resultado: $(($n1 + $n2))"
 Resultado: 43
-ivan_geraldo@cloudshell:~/Assembly/Pentester (myproject74067)$ 
-
-Context: In 16-bit, it was called IP. In 32-bit, it was EIP (Extended Instruction Pointer). In 64-bit, it is RIP
 
 PARA SINCRONIZAR AS ULTIMAS ALTERAÇÕES.
 $ git pull
-
 $ sudo apt-get update
 $ nasm -f elf64 hello.asm
 $ ls
@@ -64,18 +60,14 @@ all: $(NOME).o
 %.o: %.asm
 	nasm -f elf64 $<
 
-    ivan@ivan-Inspiron-3437:~$ xev --> ver valores binarioos teclado
-
+    ivan@ivan-Inspiron-3437:~$ xev --> ver valores binarios teclado
 
  Update the package lists.
 Code
-
     sudo apt-get update
 
-install nasm.
-Code
-
-    sudo apt-get install nasm
+INSTALL NASM
+$sudo apt-get install nasm
 
 
 {
@@ -138,9 +130,9 @@ Verify remote and optionally delete local backup.
 If you're ready, tell me:
 
 target branch name (e.g., main),
-whether to create backups (yes/no),
-whether to force-push to the remote (yes/no).
-If you'd like, I can run the non-destructive inspection commands now so you can see the current state before deciding. Which would you like
+whether to create backups (yes/no),o).
+If you'd like, I can run the non-destructi
+whether to force-push to the remote (yes/nve inspection commands now so you can see the current state before deciding. Which would you like
    
 INSTALAR NASM:
 $ sudo apt install nasm
