@@ -1,8 +1,0 @@
-Anotacoes:
-http://www.shell-storm.org
-http://www.exploit-db.com
-http://www.projectshellcode.com
-
-garantir que não tenha strike protection, e que o stack seja executado:
-$ gcc -fno-stack-protector -z execstack shellcode.c -o shellcode
-
