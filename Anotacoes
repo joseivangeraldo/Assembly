@@ -137,3 +137,8 @@ whether to force-push to the remote (yes/nve inspection commands now so you can 
 INSTALAR NASM:
 $ sudo apt install nasm
 
+
+USAR APLICAÇÃO WEB, COM GOOGLE CLOULD:
+$ cd `mktemp -d` \
+    && echo '<html><body>Hello World</body></html>' >./index.html \
+    && python -m http.server 8080
