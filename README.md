@@ -3,7 +3,7 @@ Assembly codes.
 
 ## GitHub Codespaces for embedded development
 
-This repository includes a ready-to-use Codespaces/devcontainer setup in `/home/runner/work/Assembly/Assembly/.devcontainer` with:
+This repository includes a ready-to-use Codespaces/devcontainer setup in `.devcontainer` with:
 
 - NASM and YASM for x86/x64 assembly practice
 - ARM embedded cross-compilation tools (`gcc-arm-none-eabi`, `binutils-arm-none-eabi`)
