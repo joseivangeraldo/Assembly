@@ -9,7 +9,15 @@ RUN apt-get update \
     yasm \
     build-essential \
     binutils \
+    cmake \
+    make \
+    ninja-build \
     gdb \
+    gdb-multiarch \
+    gcc-arm-none-eabi \
+    binutils-arm-none-eabi \
+    qemu-system-arm \
+    openocd \
     git \
     curl \
     ca-certificates \

@@ -1,5 +1,5 @@
 {
-  "name": "Assembly - devcontainer",
+  "name": "Assembly - embedded devcontainer",
   "build": {
     "dockerfile": "Dockerfile"
   },
@@ -7,9 +7,13 @@
     "vscode": {
       "extensions": [
         "ms-vscode.cpptools",
+        "ms-vscode.makefile-tools",
+        "marus25.cortex-debug",
+        "ms-vscode.hexeditor",
         "webfreak.debug"
       ]
     }
   },
+  "postCreateCommand": "nasm -v && arm-none-eabi-gcc --version",
   "remoteUser": "vscode"
 }
