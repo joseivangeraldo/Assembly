@@ -1,0 +1,44 @@
+ivan_geraldo@cloudshell:~/C_Language (myproject74067)$ as --version
+GNU assembler (GNU Binutils for Ubuntu) 2.42
+Copyright (C) 2024 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or later.
+This program has absolutely no warranty.
+This assembler was configured for a target of `x86_64-linux-gnu'.
+
+ivan_geraldo@cloudshell:~/Assembly (myproject74067)$ as hello.s -o hello.o
+hello.s: Assembler messages:
+hello.s: Warning: end of file not at end of a line; newline inserted
+
+ivan_geraldo@cloudshell:~/Assembly (myproject74067)$ ld hello.o -o hello
+ld: warning: cannot find entry symbol _start; defaulting to 0000000000401000
+
+ivan_geraldo@cloudshell:~/Assembly (myproject74067)$ ./hello 
+Hello, World
+
+2 WARNINGS QUE DERAM NA COMPILAÇÃO E NA LINKEDIÇÃO:
+
+The Warning: end of file not at end of a line; newline inserted warning occurs because the GNU Assembler (gas) 
+requires every assembly source file (typically .s or .S) to end with a blank newline character. 
+If the final instruction or directive in your file sits on the very last line without a trailing line break, 
+the compiler automatically inserts one to prevent syntax parsing issues and warns you about it. 
+
+How to Fix ItOpen the source file or macro file generating the warning in your text editor.
+Navigate to the very bottom of the file.Place your cursor at the end of the final line of 
+code and press Enter to add a blank new line.Save the file and recompile. 
+if you are generating assembly files programmatically via a script or command (like printf), 
+ensure your string terminates with a \n newline character.
+If you are using custom assembly macros, ensure that the macro definitions block closes 
+properly and contains a final line break inside or immediately following the .endm directive
+
+The linker warning cannot find entry symbol _start happens when the GNU linker (ld) 
+cannot find the default entry point it looks for in an executable file. 
+load-warning-cannot-find-entry-symbol-start)Why This HappensMissing _start label: 
+
+The linker looks for a symbol named _start as the absolute beginning of program execution 
+for an ELF binary.Using main instead: If you wrote a main function in assembly or used 
+a C-style entry without standard C runtime startup files, ld cannot find _start.Default 
+address fallback: The linker still builds the program, but it guesses a default 
+memory address (0000000000401000) to start execution. 
+load-warning-cannot-find-entry-symbol-start)How to Fix ItAdd _start to Assembly: 
+Define and export the _start label in your assembly code so the linker finds it:
