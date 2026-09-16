@@ -6,7 +6,6 @@ _start:
     mov $message, %rsi  # address of string
     mov $13, %rdx       # number of bytes
     syscall             # invoke operating system call
-
     mov $60, %rax       # system call 60 is exit
     mov $0, %rdi        # exit status 0
     syscall
