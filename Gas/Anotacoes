@@ -42,3 +42,49 @@ address fallback: The linker still builds the program, but it guesses a default
 memory address (0000000000401000) to start execution. 
 load-warning-cannot-find-entry-symbol-start)How to Fix ItAdd _start to Assembly: 
 Define and export the _start label in your assembly code so the linker finds it:
+
+The errors you are encountering occur because your code is written in 32-bit x86 assembly (using pushl, %ebp, and 32-bit registers), but you are assembling it on a 64-bit system where the GNU Assembler (as) defaults to 64-bit mode (x86_64). In 64-bit mode, GAS does not recognize the l suffix for push instructions.
+
+How to Fix the Error
+You have two main options to resolve this:
+
+Option 1: Compile as a 32-bit program (Recommended for this code)
+If you want to keep the code as 32-bit assembly, you must explicitly instruct your assembler and linker to target 32-bit architecture.
+
+Run the following commands in your terminal:
+
+# Assemble with the 32-bit flag
+as --32 test.S -o test.o
+
+# Link with the 32-bit ELF emulation flag
+ld -m elf_i386 test.o -o test
+
+Option 2: Rewrite the code for 64-bit x86_64
+If you are running a modern 64-bit system, it is usually better to write native 64-bit assembly. 
+This requires changing pushl to pushq, using 64-bit registers (%rbp, %rsp), 
+and updating the calling convention.
+
+Bonus Code Fixes to Watch Out For
+Once you fix the assembler flags, you will likely run into another minor bug in your 
+code on line 33:
+
+The Issue: At the top of your file, you declared .extern printf, but down in the function 
+you called call _printf with an underscore. Standard ELF systems (like Linux) 
+do not use a leading underscore for C functions.
+
+The Fix: Change line 33 from call _printf to call printf.
+
+ANOTACOES EBOOK : ProgrammingGroundUp-0-9
+On x86 processors, there are several general-purpose registers which can be used with movl:
+• %eax
+• %ebx
+• %ecx
+• %edx
+• %edi
+• %esi
+In addition to these general-purpose registers, there are also several special-purpose registers,
+including:
+• %ebp
+• %esp
+• %eip
+

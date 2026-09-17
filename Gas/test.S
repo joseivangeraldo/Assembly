@@ -32,7 +32,7 @@ movl %esp, %ebp
 subl $8, %esp
 movl 8(%ebp), %eax
 movl %eax, (%esp)
-call _printf # Here we call printf
+call printf # Here we call printf
 addl $4, %esp
 movl $0, %eax
 leave
