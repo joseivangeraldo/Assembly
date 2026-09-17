@@ -30,11 +30,10 @@ incl %edi # load next value
 movl data_items(,%edi,4), %eax
 cmpl %ebx, %eax # compare values
 jle start_loop # jump to loop beginning if the new
-# one isn’t bigger
+                # one isn’t bigger
+movl %eax, %ebx         # move the value as the largest
+jmp start_loop          # jump to loop beginning
 
-movl %eax, %ebx # move the value as the largest
-jmp start_loop # jump to loop beginning
-loop_exit:
-# %ebx is the return value, and it already has the number
-movl $1, %eax #1 is the exit() syscall
+loop_exit:                # %ebx is the return value, and it already has the number
+movl $1, %eax             #1 is the exit() syscall
 int $0x80

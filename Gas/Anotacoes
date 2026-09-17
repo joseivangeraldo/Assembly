@@ -88,3 +88,41 @@ including:
 • %esp
 • %eip
 
+Este código é um programa escrito em Assembly (uma linguagem de baixo nível, bem próxima de como o processador do computador pensa). O objetivo dele é muito simples: encontrar o maior número dentro de uma lista de números.
+
+Para entender como ele funciona, imagine que você tem uma lista de números escrita em um papel e quer descobrir qual é o maior deles usando apenas uma caixinha de memória e seguindo regras estritas.
+
+Como o programa trabalha passo a passo:
+A Lista de Números: O programa começa definindo uma lista de números (3, 67, 34, 222, 45...) e coloca um 0 no final para saber quando a lista acabou.
+
+As Caixas de Memória (Registradores): O processador usa algumas caixas especiais para guardar valores temporários:
+
+%edi: Guarda a posição atual (o índice) que estamos olhando na lista.
+
+%ebx: Guarda o maior número que encontramos até agora.
+
+%eax: Guarda o número que estamos analisando no momento.
+
+O funcionamento do loop (A varredura):
+O Começo (_start): O programa olha para o primeiro número da lista (que é o 3). 
+Como é o primeiro, ele assume provisoriamente que o 3 é o maior número encontrado 
+até o momento (%ebx = 3).
+
+Verificando o Fim (start_loop): O programa checa se o número atual é 0. 
+Se for 0, significa que a lista acabou e o programa pula para o fim (loop_exit).
+
+Passando para o Próximo: Se não acabou, ele pega o próximo número da lista.
+
+A Comparação (cmpl): Ele compara o novo número com o maior número que ele já tinha guardado (%ebx).
+
+Se o número novo for menor ou igual, ele apenas ignora e volta para o início do loop 
+para olhar o próximo.
+
+Se o número novo for maior, ele atualiza a caixinha do maior número (%ebx) com esse novo valor.
+
+Fim do Programa (loop_exit): Quando a lista inteira é percorrida e o 0 é encontrado, 
+o programa guarda o maior número encontrado (que será o 222) e encerra a execução de forma limpa avisando o sistema operacional.
+
+Resumo: O programa caminha pela lista número por número, guarda o maior valor que vai 
+encontrando pelo caminho, e descarta os menores até que a lista termine.
+
