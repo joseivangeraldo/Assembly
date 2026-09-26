@@ -1,0 +1,452 @@
+   28  c++ estruturadados1.cpp -o estruturadados1
+   29  ./estruturadados1
+   30  c++ estruturadados1.cpp -o estruturadados1
+   31  clear
+   32  ./estruturadados1
+   33  clear
+   34  edit estruturadados2.cpp
+   35  c++ estruturadados2.cpp -o estruturadados2
+   36  clear
+   37  c++ estruturadados2.cpp -o estruturadados2
+   38  ./estruturadados2
+   39  clear
+   40  find . -type f -executable -delete (DELETAR EXECUTAVEIS)
+   43  edit estruturadados3.cpp
+   44  c++ estruturadados3.cpp -o estruturadados3
+   58  c++ estruturadados3.cpp -o estruturadados3
+   62  git clone https://github.com/joseivangeraldo/IOT.git
+   64  platformio home
+   65  piome
+   66  pio --help
+   67  pio boards
+   68  platformio upgrade
+   73  debug ./estruturadados3
+   74  ./estruturadados3 
+   76  g++ teste3.cpp -o teste3
+   78  g++ teste3.cpp -o teste3
+   79  ./teste3
+   81  edit time.h
+   82  clear
+   83  edit time.cpp
+   84  edit time_main.cpp
+   85  g++ time_main.cpp time.cpp -o time
+   86  clear
+   87  g++ time_main.cpp time.cpp -o time
+   88  git status
+   89  ./git_auto.sh 
+   90  clear
+   91  ./git_auto.sh 
+   92  cd Univesp/
+   93  clear
+   94  g++ time_main.cpp time.cpp -o time
+   95  cd EstruturadeDados/
+   96  clear
+   97  g++ time_main.cpp time.cpp -o time
+   98  cd ..
+   99  ./git_auto.sh 
+  100  clear
+  101  yasm
+  102  nasm
+  103  nasm -v
+  104  clear
+  105  ls
+  106  clear
+  107  nasm
+  108  asm
+  109  as --version
+  110  clear
+  111  cd ..
+  112  cd Assembly/
+  113  clear
+  114  gcc -nostdlib hello.s -o hello
+  115  clear
+  116  gcc -nostdlib hello.s -o hello
+  117  gcc -fPIE hello.s -o hello
+  118  clear
+  119  gcc -nostdlib hello.s -o hello
+  120  ./git_auto.sh 
+  121  git pull
+  122  git config pull.rebase false
+  123  ./git_auto.sh 
+  124  git pull
+  125  ./git_auto.sh 
+  126  clear
+  127  gcc hello.s -o hello
+  128  ls
+  129  ./hello 
+  130  clear
+  131  gcc -W hello.s -o hello
+  132  as hello.s -o hello.o
+  133  ls
+  134  ld hello.o -o hello
+  135  ls
+  136  ./hello 
+  137  cd Assembly/
+  138  clear
+  139  ls
+  140  cd Gas/
+  141  clear
+  142  ls
+  143  as hello.s -o hello.o
+  144  ld hello.o -o hello
+  145  as hello.s -o hello.o
+  146  ld hello.o -o hello
+  147  ./hello 
+  148  cd ..
+  149  ./git_auto.sh 
+  150  clear
+  151  cd Gas/
+  152  ls
+  153  CEAR
+  154  clear
+  155  gcc -o test test.S
+  156  cd ..
+  157  ./git_auto.sh 
+  158  as test.S -o test
+  159  as --32 test.S -o test
+  160  ld -m elf_i386 test.o -o test
+  161  ls
+  162  clear
+  163  ls
+  164  as --32 test.S -o test
+  165  ls
+  166  as test.S -o test
+  167  clear
+  168  as --32 test.S -o test.o
+  169  ls
+  170  ld -m elf_i386 test.o -o test
+  171  clear
+  172  as --32 test.S -o test.o
+  173  ld -m elf_i386 test.o -o test
+  174  gcc -m32 test.S -o test
+  175  ./test
+  176  clear
+  177  ld -m elf_i386 test.o -o test
+  178  code Ch02_01.cpp
+  179  edit Ch02_01.cpp
+  180  edit Ch02_01.asm
+  181  clear
+  182  make Ch02_01
+  183  clear
+  184  make Ch02_01
+  185  clear
+  186  make Ch02_01
+  187  ls
+  188  nasm -v
+  189  clear
+  190  ./hello
+  191  edit first.s
+  192  as first.s -o first
+  193  as first.s -o first.o
+  194  ls
+  195  ld first.o -o first
+  196  ls
+  197  first
+  198  ./first
+  199  echo $?
+  200  dsfdsf
+  201  echo $?
+  202  clear
+  203  cd ..
+  204  ./git_auto.sh 
+  205  cd Gas/
+  206  clear
+  207  edit maximum.s
+  208  as maximum.s -o maximum.o
+  209  ls
+  210  ld maximum.o -o maximum
+  211  ./maximum 
+  212  echo $?
+  213  clear
+  214  as maximum.s -o maximum.o
+  215  ld maximum.o -o maximum
+  216  ./maximum 
+  217  echo $?
+  218  as maximum.s -o maximum.o
+  219  ld maximum.o -o maximum
+  220  ./maximum 
+  221  echo $?
+  222  as maximum.s -o maximum.o
+  223  ld maximum.o -o maximum
+  224  ./maximum 
+  225  echo $?
+  226  as maximum.s -o maximum.o
+  227  ld maximum.o -o maximum
+  228  ./maximum 
+  229  echo $?
+  230  as maximum.s -o maximum.o
+  231  clear
+  232  cd ..
+  233  ./git_auto.sh 
+  234  clear
+  235  cd Gas/
+  236  clear
+  237  ls
+  238  clear
+  239  docker pull hello-world
+  240  ls
+  241  CLEAR
+  242  docker images
+  243  docker run hello-world
+  244  ls
+  245  docker ps
+  246  docker run -it hello-world bash
+  247  docker ps -a
+  248  docker start 39
+  249  docker start c1
+  250  docker ps 
+  251  docker ps -a
+  252  clear
+  253  docker ps
+  254  docker images
+  255  clear
+  256  docker ps -a
+  257  docker rm *.*
+  258  docker ps
+  259  clear
+  260  docker ps -a
+  261  docker rm 39
+  262  docker rm c1
+  263  clear
+  264  docker ps
+  265  docker ps -a
+  266  clear
+  267  docker ps
+  268  clear
+  269  docker ps -a
+  270  docker run ubuntu sleep 1500
+  271  clear
+  272  docker ps
+  273  clear
+  274  docker ps -a
+  275  docker stop 29af0d16d5af
+  276  docker ps -a
+  277  CLEAR
+  278  clear
+  279  docker run it ubuntu
+  280  docker ps
+  281  docker run -it ubuntu
+  282  clear
+  283  docker ps
+  284  docker ps -a
+  285  docker run -it ubuntu
+  286  clear
+  287  docker ps -a
+  288  docker exec -it e71cb1b851e9 BASH
+  289  docker start  exec -it e71cb1b851e9 BASH
+  290  docker start  exec -it e71cb1b851e9 bash
+  291  docker start e71cb1b851e9 bash
+  292  docker start e71cb1b851e9
+  293  docker ps
+  294  docker exec -it e71cb1b851e9 bash
+  295  docker ps
+  296  CLEAR
+  297  clear
+  298  docker ps
+  299  CLEAR
+  300  clear
+  301  ls
+  302  clear
+  303  docker images
+  304  docker rmi hello-world:latest 
+  305  clear
+  306  docker images
+  307  clear
+  308  cd ..
+  309  clear
+  310  git clone https://github.com/joseivangeraldo/Docker.git
+  311  clear
+  312  docker ps
+  313  docker images
+  314  clear
+  315  docker pull ubuntu
+  316  docker ps
+  317  docker images
+  318  ls
+  319  cd Docker/
+  320  clear
+  321  ls
+  322  cd Debian-A
+  323  ls
+  324  cd debian-A
+  325  clear
+  326  ls
+  327  cp *.* ..
+  328  ls
+  329  clear
+  330  cd ..
+  331  ls
+  332  clear
+  333  docker ps
+  334  docker ps -a
+  335  clear
+  336  docker images
+  337  clear
+  338  docker run -dti --name Ubuntu-A ubuntu:latest
+  339  clear
+  340  docker ps
+  341  docker exec -ti e7573e604ed3 bash
+  342  clear
+  343  docker ps]
+  344  docker ps
+  345  clear
+  346  docker ps
+  347  clear
+  348  docker exec Ubuntu-A mkdir
+  349  docker exec mkdir Ubuntu-A:/destino
+  350  docker exec Ubuntu-A mkdir /destino
+  351  ls
+  352  docker cp Ubuntu-A Arq*.* /destino
+  353  docker cp Ubuntu-A:Arq*.* /destino
+  354  clear
+  355  ls
+  356  docker cp Arqu*.* Ubuntu-A:/destino
+  357  docker cp ArquivoA.txt Ubuntu-A:/destino
+  358  docker cp Arqu*.* Ubuntu-A:/destino
+  359  docker cp ArquivoB.txt Ubuntu-A:/destino
+  360  CLEAR
+  361  clear
+  362  docker exec Ubuntu-A bash
+  363  docker ps
+  364  clear
+  365  docker exec -it Ubuntu-A bash
+  366  clear
+  367  ./git_auto.sh 
+  368  clear
+  369  ls
+  370  cd debian-A
+  371  ls
+  372  cd ..
+  373  ls
+  374  tar -cvf site.tar .
+  375  ls
+  376  tar -cvf site.tar
+  377  ls
+  378  clear
+  379  tar -t site.tar
+  380  ls
+  381  clear
+  382  cd ..
+  383  cd Debian-A
+  384  cd debian-A
+  385  ls
+  386  tar arquivos.tar .
+  387  tar arquivos.tar
+  388  tar -c arquivos.tar
+  389  ls
+  390  tar -cvf arquivos.tar *.txt
+  391  ls
+  392  clear
+  393  ls
+  394  tar -t arquivos.tar
+  395  tar -f arquivos.tar
+  396  tar -tfv arquivos.tar
+  397  ls
+  398  clear
+  399  tar -tvf arquivos.tar
+  400  CLEAR
+  401  clear
+  402  ls
+  403  touch newfile.txt
+  404  tar -rvf arquivos.tar newfile.txt
+  405  ls
+  406  tar -tvf arquivos.tar 
+  407  clear
+  408  cd ..
+  409  cd debian-apache/
+  410  clear
+  411  ls
+  412  docker build -t my-apache2 .
+  413  clear
+  414  docker ps
+  415  docker images
+  416  docker run -dit --name my-running-app -p 8080:80 my-apache2
+  417  docker ps
+  418  allow-tcp-8080
+  419  gcloud compute firewall-rules create allow-tcp-8080     --allow=tcp:8080     --description="Allow incoming traffic on TCP port 8080"     --direction=INGRESS     --source-ranges=0.0.0.0/0
+  420  clear
+  421  gcloud compute firewall-rules create allow-tcp-8080     --allow=tcp:8080     --direction=INGRESS     --source-ranges=0.0.0.0/0     --target-tags=http-8080
+  422  cd ..
+  423  ./git_auto.sh 
+  424  git pull
+  425  clear
+  426  npx create-expo-app@latest my-mobile-app
+  427  clear
+  428  cd my-mobile-app/
+  429  clear
+  430  npx expo start --tunnel
+  431  clear
+  432  cd ..
+  433  clear
+  434  git status
+  435  git add .
+  436  git push
+  437  docker ps -a
+  438  clear
+  439  docker images
+  440  clear
+  441  cd ..
+  442  cd Assembly/
+  443  ls
+  444  touch chapter3.s
+  445  as exit.s -o exit.o
+  446  as chapter3.s -o chapter3.o
+  447  ls
+  448  ld chapter3.o -o chapter3
+  449  ./chapter3
+  450  echo ?$
+  451  ./chapter3
+  452  echo $?
+  453  clear
+  454  as chapter3.s -o chapter3.o
+  455  ld chapter3.o -o chapter3
+  456  echo $?
+  457  docker image build \-t debian-apache:1.0
+  458  clear
+  459  docker image build \-t debian-apache:1.0 .
+  460  clear docker images
+  461  docker images
+  462  clear
+  463  docker run -dti -p 80:80 --name meu-apache debian-apache:1.0
+  464  docker ps
+  465  clear
+  466  docker run -dti -p 80:80 --name meu-apache debian-apache:1.0
+  467  docker ps
+  468  clear
+  469  go run ./cmd/gotelemetry view --dev
+  470  gotelemetry view
+  471  chrome
+  472  browser
+  473  clear
+  474  docker ps
+  475  docker stop e05fa37a372f
+  476  docker rm e05fa37a372f
+  477  clear
+  478  docker images
+  479  docker rmi 87
+  480  docker rmi debian-apache:1.0
+  481  clear
+  482  cd  ..
+  483  cd Assembly/
+  484  clear
+  485  mkdir testes
+  486  cd testes/
+  487  clear
+  488  cat > arquivo1.txt
+  489  clear
+  490  ls
+  491  cat arquivo1.txt 
+  492  history
+  493  clear
+  494  cd ..
+  495  cd Docker/
+  496  clear
+  497  cd debian-apache/
+  498  clear
+  499  tar -v site.tar
+  500  tar -svf site.tar
+  501  ./git_auto.sh 
+  502  clear
+  503  ls
+  504  edit chapter3.s
+  505  history
