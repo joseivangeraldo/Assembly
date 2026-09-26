@@ -126,3 +126,33 @@ o programa guarda o maior número encontrado (que será o 222) e encerra a execu
 Resumo: O programa caminha pela lista número por número, guarda o maior valor que vai 
 encontrando pelo caminho, e descarta os menores até que a lista termine.
 
+GDB COMMANDS:
+(gdb) set disassembly-flavor intel
+(gdb) x/64db &data_items
+0x402000:       3       0       0       0       67      0       0       0
+0x402008:       34      0       0       0       -106    0       0       0
+0x402010:       45      0       0       0       75      0       0       0
+0x402018:       54      0       0       0       34      0       0       0
+0x402020:       44      0       0       0       33      0       0       0
+0x402028:       22      0       0       0       11      0       0       0
+0x402030:       66      0       0       0       0       0       0       0
+0x402038:       0       0       0       0       0       0       0       0
+(gdb) x/64ub &data_items
+0x402000:       3       0       0       0       67      0       0       0
+0x402008:       34      0       0       0       150     0       0       0
+0x402010:       45      0       0       0       75      0       0       0
+0x402018:       54      0       0       0       34      0       0       0
+0x402020:       44      0       0       0       33      0       0       0
+0x402028:       22      0       0       0       11      0       0       0
+0x402030:       66      0       0       0       0       0       0       0
+0x402038:       0       0       0       0       0       0       0       0
+(gdb) x/64gb &data_items
+0x402000:       3       0       0       0       67      0       0       0
+0x402008:       34      0       0       0       150     0       0       0
+0x402010:       45      0       0       0       75      0       0       0
+0x402018:       54      0       0       0       34      0       0       0
+0x402020:       44      0       0       0       33      0       0       0
+0x402028:       22      0       0       0       11      0       0       0
+0x402030:       66      0       0       0       0       0       0       0
+0x402038:       0       0       0       0       0       0       0       0
+
