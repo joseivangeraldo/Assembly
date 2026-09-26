@@ -13,7 +13,7 @@
 # to terminate the data
 #
 .section .data
-data_items: #These are the data items
+data_items:     #These are the data items
 .long 3,67,34,222,45,75,54,34,44,33,22,11,66,0
 .section .text
 .globl _start
