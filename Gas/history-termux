@@ -1,0 +1,103 @@
+tory                                  1  ls
+    2  cd c                                  3  clear                                 4  ls                                    5  ./ex1
+    6  nano ex1.cpp                          7  clear                                 8  exit
+    9  asm
+   10  asm -v
+   11  nasm                                 12  pkg install nasm                     13  nasm -v                              14  exit                                 15  as
+   16  gcc                                  17  nano first.s                         18  ls
+   19  gcc first.s -o first
+   20  nano first.s
+   21  gcc first.s -o first
+   22  nano first.s
+   23  exit
+   24  nano first.s
+   25  gcc first.s -o first
+   26  exit
+   27  ls
+   28  nano first.s
+   29  ls
+   30  as first.s -o first.o
+   31  as version
+   32  as --version
+   33  exit
+   34  nasm version
+   35  nasm --version
+   36  clear
+   37  nasm first.s -o first.o
+   38  exit
+   39  pkg install gas
+   40  pkg update
+   41  pkg upgrade
+   42  pkg install binutils -y
+   43  gas --version
+   44  as
+   45  clear
+   46  ls
+   47  ./a
+   48  clear
+   49  as first.s
+   50  clewr
+   51  clear
+   52  as first.s -o first.o
+   53  nano first.s
+   54  as first.s -o first.o
+   55  nano first.s
+   56  as first.s -o first.o
+   57  clewr
+   58  clewt
+   59  clear
+   60  as first.s -o first.o
+   61  nano first.s
+   62  clear
+   63  as first.s -o first.o
+   64  nano first.s
+   65  clear
+   66  as first.s -o first.o
+   67  nano first.s
+   68  clear
+   69  exit
+   70  nano hello.s
+   71  clear
+   72  as hello.s -o hello.o
+   73  exit
+   74  nano hello.s
+   75  as hello.s -o hello.o
+   76  nano hello.s
+   77  as hello.s -o hello.o
+   78  nano hello.s
+   79  as hello.s -o hello.o
+   80  nano hello.s
+   81  as hello.s -o hello.o
+   82  exit
+   83  nano hello.s
+   84  as hello.s -o hello.o
+   85  ld hello.o hello
+   86  ls
+   87  ld hello.o -o hello
+   88  ./hello
+   89  ls
+   90  ./hello
+   91  nano hello.s
+   92  clear
+   93  as hello.s
+   94  as hello.s -o hello.o
+   95  ld hello.o -o hello
+   96  ./hello
+   97  as hello.s -o hello.o
+   98  clang hello.o -o hello
+   99  nano hello.s
+  100  clang hello.o -o hello
+  101  nano hello.s
+  102  clear
+  103  clang hello.o -o hello
+  104  nano hello.s
+  105  clang hello.o -o hello
+  106  clwar
+  107  clear
+  108  as hello.s -o hello.o
+  109  clang hello.o -o hello
+  110  ./hello
+  111  nano hello.s
+  112  clear
+  113  history
+~ $
