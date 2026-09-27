@@ -145,3 +145,8 @@ GDB COMMANDS:
 0x402030:       66      0       0       0       0       0       0       0
 0x402038:       0       0       0       0       0       0       0       0
 
+SABER TAMNHO DE UM ARRAY:
+section .data
+    meu_array dw 10, 20, 30, 40      ; Cada 'dw' usa 2 bytes (word)
+    TAMANHO_BYTEM EQU $ - meu_array   ; Tamanho total em bytes (8)
+    TAMANHO_ELEM  EQU ($ - meu_array) / 2 ; Número de elementos (4)
