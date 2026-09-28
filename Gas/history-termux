@@ -101,3 +101,4 @@ tory                                  1  ls
   112  clear
   113  history
 ~ $
+sed -i '/palavra_antiga/c\Novo texto' arquivo.txt
