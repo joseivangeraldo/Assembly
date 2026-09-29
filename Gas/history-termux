@@ -1,10 +1,22 @@
-tory                                  1  ls
-    2  cd c                                  3  clear                                 4  ls                                    5  ./ex1
-    6  nano ex1.cpp                          7  clear                                 8  exit
+history
+    1  ls
+    2  cd c
+    3  clear
+    4  ls
+    5  ./ex1
+    6  nano ex1.cpp
+    7  clear
+    8  exit
     9  asm
    10  asm -v
-   11  nasm                                 12  pkg install nasm                     13  nasm -v                              14  exit                                 15  as
-   16  gcc                                  17  nano first.s                         18  ls
+   11  nasm
+   12  pkg install nasm
+   13  nasm -v
+   14  exit
+   15  as
+   16  gcc
+   17  nano first.s
+   18  ls
    19  gcc first.s -o first
    20  nano first.s
    21  gcc first.s -o first
@@ -100,5 +112,110 @@ tory                                  1  ls
   111  nano hello.s
   112  clear
   113  history
-~ $
-sed -i '/palavra_antiga/c\Novo texto' arquivo.txt
+  114  exit
+  115  ls
+  116  cat hello.s
+  117  exit
+  118  ls
+  119  clea4
+  120  clear
+  121  docker ps
+  122  clear
+  123  ls
+  124  mysql
+  125  clear
+  126  exit
+  127  clear
+  128  ls
+  129  desassemble ./hello
+  130  clear
+  131  gdb
+  132  pkg install gdb
+  133  clear
+  134  gdb
+  135  clear
+  136  gdb ./hello
+  137  clear
+  138  gdb ./hello tui
+  139  clear
+  140  exit
+  141  mysql
+  142  cleat
+  143  clear
+  144  ls
+  145  disassemble
+  146  exit
+  147  clewr
+  148  clear
+  149  cat > teste.txt
+  150  clear
+  151  cat teste.txt
+  152  clear
+  153  cat >> teste.txt
+  154  cat teste.txt
+  155  cleqr
+  156  clear
+  157  cat teste.txt
+  158  sed -i '/palavra_antiga/c\Novo texto' teste.txt
+  159  cat teste.txt
+  160  sed -i '/linha 2/c\Novo texto' teste.txt
+  161  cat teste.txt
+  162  clewr
+  163  clear
+  164  exit
+  165  clear
+  166  exit
+  167  clear
+  168  la
+  169  ls
+  170  rm a.out
+  171  clear
+  172  exit
+  173  nano anotacoes
+  174  clear
+  175  ls
+  176  nano anotacoes
+  177  clear
+  178  sudo su
+  179  sudo
+  180  sudo ls
+  181  clear
+  182  ls
+  183  nano anotacoes
+  184  exit
+  185  pkg install apache2
+  186  http://127.0.0.1:8080
+  187  ifconfig
+  188  httpd
+  189  sshd
+  190  pkg install openssh
+  191  clear
+  192  apachectl start
+  193  ls
+  194  cd ..
+  195  ls
+  196  cd usr
+  197  ls
+  198  cd share/
+  199  ls
+  200  cd apache2/
+  201  ls
+  202  cd default-site/
+  203  ls
+  204  cd htdocs/
+  205  ls
+  206  nano manual/
+  207  cd manual/
+  208  ls
+  209  clear
+  210  ls
+  211  clear
+  212  cd ~
+  213  ls
+  214  clear
+  215  exit
+  216  clear
+  217  ls
+  218  clewr
+  219  clear
+  220  history
