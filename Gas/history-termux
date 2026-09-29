@@ -219,3 +219,6 @@ history
   218  clewr
   219  clear
   220  history
+  226  cd $PREFIX/share/apache2/default-site/htdocs
+  227  ls
+  228  history
