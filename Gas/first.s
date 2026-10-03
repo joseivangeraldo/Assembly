@@ -12,3 +12,4 @@ movl $0, %ebx
 # echo $?
 int $0x80 # this wakes up the kernel to run
 # the exit command
+# more a comment
