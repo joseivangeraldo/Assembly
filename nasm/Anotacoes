@@ -1,0 +1,41 @@
+; Build using these commands:
+; nasm -f elf -g -F stabs eatsyscall.asm
+; ld -o eatsyscall eatsyscall.o
+;
+;This error happens because your source code is written for 32-bit(x86)architecture 
+;(int 80H syscalls and 32-bit registers like eax, ebx), 
+;but your linker is trying to build a 64-bit (x86-64) 
+;executable by default.
+;  32Bits
+; nasm -f elf32 eatsyscall.asm -o eatsyscall.o
+;ld -m elf_i386 eatsyscall.o -o eatsyscall
+;
+
+nasm -f elf -g -F stabs eatsyscall.asm
+(1)    (2)    (3) (4)  (5)      (5)
+
+(1) Invokes the Assembler
+(2)Specifies that the .o file will be generated in the “elf” format.
+(3)Specifies that debug information is to be included in the .o file.
+(4)Specifies that debug information is to be generated in the “stabs” format.
+(5)The name of the source code file to be assembled.
+
+ivan_geraldo@cloudshell:~/Assembly/nasm (myproject74067)$ objdump -d ./eatsyscall
+
+./eatsyscall:     file format elf32-i386
+
+Disassembly of section .text:
+
+08049000 <_start>:
+ 8049000:       90                      nop
+ 8049001:       b8 04 00 00 00          mov    $0x4,%eax
+ 8049006:       bb 01 00 00 00          mov    $0x1,%ebx
+ 804900b:       b9 00 a0 04 08          mov    $0x804a000,%ecx
+ 8049010:       ba 10 00 00 00          mov    $0x10,%edx
+ 8049015:       cd 80                   int    $0x80
+ 8049017:       b8 01 00 00 00          mov    $0x1,%eax
+ 804901c:       bb 00 00 00 00          mov    $0x0,%ebx
+ 8049021:       cd 80                   int    $0x80
+
+ The Quick Fix: Change the window focus back to the command prompt by typing:text
+(gdb) focus cmd
