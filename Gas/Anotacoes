@@ -150,3 +150,28 @@ section .data
     meu_array dw 10, 20, 30, 40      ; Cada 'dw' usa 2 bytes (word)
     TAMANHO_BYTEM EQU $ - meu_array   ; Tamanho total em bytes (8)
     TAMANHO_ELEM  EQU ($ - meu_array) / 2 ; Número de elementos (4)
+
+OBJDUMP MAXIMUM:
+0000000000401000 <_start>:
+  401000:       bf 00 00 00 00          mov    $0x0,%edi
+  401005:       67 8b 04 bd 00 20 40    mov    0x402000(,%edi,4),%eax
+  40100c:       00 
+  40100d:       89 c3                   mov    %eax,%ebx
+
+000000000040100f <start_loop>:
+  40100f:       83 f8 00                cmp    $0x0,%eax
+  401012:       74 12                   je     401026 <loop_exit>
+  401014:       ff c7                   inc    %edi
+  401016:       67 8b 04 bd 00 20 40    mov    0x402000(,%edi,4),%eax
+  40101d:       00 
+  40101e:       39 d8                   cmp    %ebx,%eax
+  401020:       7e ed                   jle    40100f <start_loop>
+  401022:       89 c3                   mov    %eax,%ebx
+  401024:       eb e9                   jmp    40100f <start_loop>
+
+DISASSEMBLE ONLY DATA:
+ivan_geraldo@cloudshell:~/Assembly/Gas (myproject74067)$ objdump -D -j .data ./maximum
+DISASSEMBLE ALL:
+ivan_geraldo@cloudshell:~/Assembly/Gas (myproject74067)$ objdump -D ./maximum
+VIEW BYNARY: 
+ivan_geraldo@cloudshell:~/Assembly/Gas (myproject74067)$ objdump -s -b binary ./maximum
